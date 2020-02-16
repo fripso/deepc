@@ -1,0 +1,22 @@
+@import 'variables';
+
+.bubble {
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: $box-shadow, inset 0px 5px 10px 0px rgba(255, 255, 255, 1);
+    animation: updown ease-in-out 5s infinite alternate, leftright ease-in-out 2s infinite alternate;
+
+    &.light {
+        box-shadow: $box-shadow, inset 0px 5px 10px 0px rgba(255, 255, 255, 1),  0px 0px 20px 0px rgb(255, 255, 255);
+    }
+
+}
+
+@keyframes updown {
+    100% { margin-top: 10%; }
+}
+
+@keyframes leftright {
+    100% { margin-left: 5%; }
+}

@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'responsive';
+
+$box-shadow: 0 5px 2px  rgba(0,0,0,0.4);
+$box-shadow-dark: 0 5px 5px  rgba(0,0,0,0.8);
+
+@mixin zone-description {
+
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    margin: 0 20em;
+    color: whitesmoke;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    @include desktop {
+        margin: 0 10em;
+    }
+
+    @include touch {
+        margin: 3em;
+    }
+}

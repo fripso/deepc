@@ -1,0 +1,6 @@
+@import 'variables';
+
+.bathyal {
+    @include zone-description;
+    top: 7500px;
+}

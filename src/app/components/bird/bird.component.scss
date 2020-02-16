@@ -1,0 +1,25 @@
+@import 'responsive';
+
+.bird-container {
+	position: absolute;
+    right: -200px;
+    width: 80px;
+    padding: 100px;
+}
+
+.bird {
+    height: 125px;
+    width: 80px;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    transform: scale(-.5, .5);
+	animation: fly 1.2s infinite steps(10), float .6s infinite ease-in-out alternate -.2s;
+}
+
+@keyframes fly {
+	100% { background-position: -900px 0; }
+}
+
+@keyframes float {
+    100% { margin-top: 20px; }
+}

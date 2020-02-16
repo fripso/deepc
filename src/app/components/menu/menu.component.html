@@ -1,0 +1,39 @@
+<div class="menu-container">
+   <div class="nav-logo-container" [ngClass]="{'lighted': lightsOn && hidden}">
+        <div class="light" [hidden]="!(lightsOn && hidden)"></div>
+        <img (click)="scrollTo.emit(0)" #logo src="/assets/logo@128.png" alt="Logo">
+        <span [hidden]="hidden" [ngClass]="{'small': hidden}">deep c</span>
+    </div>
+    <div class="burger-shape-container">
+        <div #burgershape class="burger-shape" (click)="scroll.showMenu()">
+            <div class="burger">
+                <div class="burger-stripe top"></div>
+                <div class="burger-stripe"></div>
+                <div class="burger-stripe bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div #navshape class="nav-shape-container">
+        <div class="nav-shape"></div>
+        <nav>
+            <ul class="nav-items">
+                <li class="nav-item is-size-s">
+                    <a (click)="scrollTo.emit(0)">0m</a>
+                </li>
+                <li class="nav-item is-size-s">
+                    <a (click)="scrollTo.emit(5000)">500m</a>
+                </li>
+                <li class="nav-item is-size-s">
+                    <a (click)="scrollTo.emit(7500)">1500m</a>
+                </li>
+                <li class="nav-item is-size-s">
+                    <a (click)="scrollTo.emit(12500)">5000m</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+

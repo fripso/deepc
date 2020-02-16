@@ -1,0 +1,6 @@
+@import 'variables';
+
+.mesopelagic {
+    @include zone-description;
+    top: 5000px;
+}

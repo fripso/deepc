@@ -1,0 +1,57 @@
+@import 'responsive';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: $water;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 5em;
+    @include touch {
+        padding: 1em;
+    }
+}
+
+.is-size-s {
+    font-size: 1em;
+}
+
+.is-size-m {
+    font-size: 2.5em;
+
+    @include touch {
+        font-size: 1.5em;
+    }
+    @include mobile {
+        font-size: 1em;
+    }
+}
+
+.is-size-l {
+    font-size: 5em;
+}
+

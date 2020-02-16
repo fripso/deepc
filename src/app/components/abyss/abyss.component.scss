@@ -1,0 +1,6 @@
+@import 'variables';
+
+.abyss {
+    @include zone-description;
+    top: 12500px;
+}

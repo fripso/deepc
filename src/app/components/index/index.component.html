@@ -1,0 +1,24 @@
+<app-birds></app-birds>
+<app-bubbles [count]="20" [scrollState]="scrollState" [y]="y"></app-bubbles>
+<div #banner class="banner"></div>
+<div class="below-banner">
+    <div class="long">
+        <section class="content">
+            <div class="introduction">
+                <span class="text">
+                    The deep sea or deep layer is the lowest layer in the ocean, existing below the thermocline and above the seabed, at
+                    a depth of 1000 fathoms (1800 m) or more. Little or no light penetrates this part of the ocean, and most of the
+                    organisms that live there rely for subsistence on falling organic matter produced in the photic zone. For this reason,
+                    scientists once assumed that life would be sparse in the deep ocean, but virtually every probe has revealed that, on the
+                    contrary, life is abundant in the deep ocean.
+                </span>
+            </div>
+            <app-mesopelagic [show]="y >= 4500 && y <= 6000"></app-mesopelagic>
+            <app-bathyal [show]="y >= 7000 && y <= 8500"></app-bathyal>
+            <app-abyss [show]="y >= 12000 && y <= 13000"></app-abyss>
+        </section>
+    </div>
+</div>
+
+
+
